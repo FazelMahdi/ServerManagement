@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'sanserif';
+    src:  url('./assets/fonts/IRANSans-web.woff2') format('woff2'),
+          url('./assets/fonts/IRANSans-web.woff') format('woff');
+  }
+  body{
+      font-family: sanserif;
+  }

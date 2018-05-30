@@ -1,3 +1,12 @@
-<p>
-  edit-server works!
-</p>
+<div class="form-group">
+  <label for="name">نام سرور</label>
+  <input type="text" id="name" class="form-control" [(ngModel)]="serverName">
+</div>
+<div class="form-group">
+  <label for="status">وضعیت سرور</label>
+  <select type="text" id="status" class="form-control" [(ngModel)]="serverStatus">
+    <option value="آنلاین"> آنلاین</option>
+    <option value="آفلاین"> آفلاین</option>
+  </select>
+</div>
+<button class="btn btn-primary" (click)="onUpdateServer()">بروزرسانی</button>
