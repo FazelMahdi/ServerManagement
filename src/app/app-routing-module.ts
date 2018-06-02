@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './not-found/not-found.component';
 import { Routes, RouterModule, } from '@angular/router';
 import { NgModule } from '@angular/core';
 
@@ -18,8 +19,9 @@ const routeNav : Routes = [
     {path:'servers', component: ServersComponent, children: [
         {path:':id', component: ServerComponent},
         {path:':id/edit', component: EditServerComponent},
-
     ]},
+    {path:'not-found', component: NotFoundComponent},
+    {path:'**', redirectTo:'not-found'}
     
     ]
 

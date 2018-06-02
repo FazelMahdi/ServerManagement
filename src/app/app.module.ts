@@ -11,6 +11,7 @@ import { ServerComponent } from './servers/server/server.component';
 import { EditServerComponent } from './servers/edit-server/edit-server.component';
 import { ServersService } from './servers/servers.service';
 import { RoutingModule } from './app-routing-module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -25,7 +26,8 @@ import { RoutingModule } from './app-routing-module';
     UserComponent,
     ServersComponent,
     ServerComponent,
-    EditServerComponent
+    EditServerComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
